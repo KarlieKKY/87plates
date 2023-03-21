@@ -269,6 +269,7 @@ padding: 0 8px;
 
 /* footer */
 footer {
+    display: none;
     background-color: #fffaec;
     /* color: #fff; */
     padding-bottom: 3%;

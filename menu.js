@@ -13,8 +13,7 @@ const fetchAndRender = async () => {
   }
 
   document.getElementById(`all-card-container`).style.display = "block";
-
-  console.log(dishes);
+  document.getElementById(`footer`).style.display = "block";
   } catch (err) {
     console.log(err);
   };
