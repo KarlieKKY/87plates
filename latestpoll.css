@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
+h2{
+    font-family: 'Gotham Light'
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #42e4df, #2a81c3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+ }
+
+
+
 :root{
     --turquoise: #2bafa4;
     --black: #130f40;
@@ -210,64 +222,11 @@ section{
     margin: 1rem;
 }
 
-/* media queries */
-@media (max-width:991px){
-    html{
-        font-size: 55%;
-     
-    }
-    .header{
-        padding:2rem;
-    }
-}
-
-section{
-    padding:2rem;
-}
-
-@media (max-width:768px){
-
-    #menu-btn{
-        display: inline-block;
-    }
-
-    .header .search-form{
-        width: 90px;
-    }
-     .header .navbar{
-        position:absolute;
-        top:110%; right:-110%;
-        width:30rem;
-        box-shadow: var(--box-shadow);
-        border-radius: .5rem;
-        background:#fff;
-
-    }
-
-    .header .navbar.active{
-        right:2rem;
-        transition: .4s linear;
-    }
-
-    .header .navbar a{
-        font-size: 2rem;
-        margin:2rem 2.5rem;
-        display: block;
-    }
-}
-
-@media (max-width:450px){
-    html{
-        font-size: 55%;
-     
-    }
-}
-
 .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(images/food3_cleanup.jpeg) no-repeat;
+    /* background: url(images/food3_cleanup.jpeg) no-repeat; */
     background-position: center;
     background-size: cover;
     padding-top: 32rem;
@@ -277,19 +236,11 @@ section{
 
 .home .content{
     text-align:center;
-    width:60rem;
-}
-
-.home .content h3{
-    color:var(--black);
-    font-size: 3rem;
+    width:800px;
+    background-color: #eee;
 }
 
 
-.home .content h3 span{
-    color: #3ea89f;
-
-}
 
 .home .content p{
     color:var(--light-color);
@@ -299,102 +250,10 @@ section{
     line-height: 1.8;
 }
 
-.aboutus .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.aboutus .box-container .box{
-    padding:3rem 2rem;
-    background: #fff;
-    outline: var(--outline);
-    outline-offset: -1rem;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-
-}
-
-.aboutus .box-container .box:hover{
-    outline: var(--outline-hover);
-    outline-offset: 1rem;
-
-}
-
-.aboutus .box-container .box img{
-    margin: 1rem 0;
-    height: 23rem;
-}
-
-.aboutus .box-container .box h3{
-    font-size: 2rem;
-    line-height: 1.8;
-    color:var(--black);
-}
-
-.aboutus .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:var(--light-color);
-    padding:1rem 0;
-}
-
-
-.cusine .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.cusine .box-container .box{
-    padding:3rem 2rem;
-    background: #fff;
-    outline: var(--outline);
-    outline-offset: -1rem;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-
-}
-
-.cusine .box-container .box:hover{
-    outline: var(--outline-hover);
-    outline-offset: 1rem;
-
-}
-
-.cusine .box-container .box img{
-    margin: 1rem 0;
-    height: 16rem;
-}
-
-.cusine .box-container .box h5{
-    font-size: 1.8rem;
-    line-height: 1.8;
-    color:var(--black);
-}
-
-.cusine .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:var(--light-color);
-    padding:1rem 0;
-}
-
-#footer {
+.footer{
     background-color: #13B0B9;
     color: #fff;
     padding-bottom: 2%;
     padding-top: 3%;
     text-align: center;
 }
-  
-  .social-link {
-    color: #FAF0D0;
-    font-size: 2rem;
-    line-height: 2;
-    padding: 0% 1.5% 0%;
-  }
-
-  .social-icon:hover {
-    transform: scale(1.5);
-  }
