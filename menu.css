@@ -330,13 +330,10 @@ footer {
         width: 1896px;
     }
 
-    footer {
-        margin-top: 80px;
-    }
 }
 
 @media (max-width: 1280px) {
-    .nav-link {
+    .colored-section .nav-link {
         font-size: 17px;
     }
 }
@@ -397,6 +394,8 @@ footer {
         width: 777px;
     }
     footer {
-        width: 777px
+        width: 777px;
+        margin-top: 39px !important;
+        padding-top: 14px !important;
     }
 }
